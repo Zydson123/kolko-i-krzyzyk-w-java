@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void wypisz(char board[][]){
+    public static void print(char board[][]){
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 3; j++)
             {
-                System.out.print(board[i][j]);
+                System.out.print(" " + board[i][j] + " ");
             }
             System.out.println();
         }
@@ -51,11 +51,11 @@ public class Main {
         {
             for (int j = 0; j < 3; j++)
             {
-                board[i][j] = '!';
+                board[i][j] = 'n';
             }
         }
         while(true){
-            wypisz(board);
+            print(board);
             if(check(board)=='x'){
                 System.out.println("X won!");
                 break;
@@ -72,7 +72,7 @@ public class Main {
                 System.out.println("Choose the Y coordinates of your move");
                 input = new Scanner(System.in);
                 int coordsY = input.nextInt();
-                if(board[coordsY][coordsX]=='!') {
+                if(board[coordsY][coordsX]!='x' && board[coordsY][coordsX]!='o') {
                     board[coordsY][coordsX] = 'x';
                     whoseTurn ='o';
                 }
@@ -88,7 +88,7 @@ public class Main {
                 System.out.println("Choose the Y coordinates of your move");
                 input = new Scanner(System.in);
                 int coordsY = input.nextInt();
-                if(board[coordsY][coordsX]=='!') {
+                if(board[coordsY][coordsX]!='x' && board[coordsY][coordsX]!='o') {
                     board[coordsY][coordsX] = 'o';
                     whoseTurn ='x';
                 }
