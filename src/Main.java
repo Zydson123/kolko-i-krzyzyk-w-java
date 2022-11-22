@@ -28,17 +28,17 @@ public class Main {
             whoWon = 'x';
         }
 
-        else if(board[x][y]=='y' && board[x+1][y]=='y' && board[x+2][y]=='y'){
-            whoWon = 'y';
+        else if(board[x][y]=='o' && board[x+1][y]=='o' && board[x+2][y]=='o'){
+            whoWon = 'o';
         }
-        else if(board[x][y]=='y' && board[x][y+1]=='y' && board[x][y+2]=='y'){
-            whoWon = 'y';
+        else if(board[x][y]=='o' && board[x][y+1]=='o' && board[x][y+2]=='o'){
+            whoWon = 'o';
         }
-        else if(board[x][y]=='y' && board[x+1][y+1]=='y' && board[x+2][y+2]=='y'){
-            whoWon = 'y';
+        else if(board[x][y]=='o' && board[x+1][y+1]=='o' && board[x+2][y+2]=='o'){
+            whoWon = 'o';
         }
-        else if(board[x+2][y]=='y' && board[x+1][y+1]=='y' && board[x][y+2]=='y'){
-            whoWon = 'y';
+        else if(board[x+2][y]=='o' && board[x+1][y+1]=='o' && board[x][y+2]=='o'){
+            whoWon = 'o';
         }
       return whoWon;
     }
