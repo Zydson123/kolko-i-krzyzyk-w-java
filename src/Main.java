@@ -11,6 +11,19 @@ public class Main {
             System.out.println();
         }
     }
+    public static boolean check_draw(char board[][]){
+        int XorOamount = 0;
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                if(board[i][j]!='n'){
+                    XorOamount++;
+                }
+            }
+        }
+        return XorOamount == 9;
+    }
     public static char check(char board[][]){
         int x=0;
         int y = 0;
@@ -46,7 +59,6 @@ public class Main {
         System.out.println("Hello world!");
         char[][] board = new char[3][3];
         char whoseTurn = 'x';
-        //boolean ended = false;
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 3; j++)
@@ -56,7 +68,11 @@ public class Main {
         }
         while(true){
             print(board);
-            if(check(board)=='x'){
+            if(check_draw(board)){
+                System.out.println("Its a draw!");
+                break;
+            }
+            else if(check(board)=='x'){
                 System.out.println("X won!");
                 break;
             }
