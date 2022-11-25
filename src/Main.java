@@ -22,7 +22,7 @@ public class Main {
                 }
             }
         }
-        return XorOamount == 9;
+        return XorOamount == board.length* board.length;
     }
     public static char check(char board[][]){
         int x=0;
