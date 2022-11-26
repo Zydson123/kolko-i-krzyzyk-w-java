@@ -68,16 +68,16 @@ public class Main {
         }
         while(true){
             print(board);
-            if(check_draw(board)){
-                System.out.println("Its a draw!");
-                break;
-            }
-            else if(check(board)=='x'){
+            if(check(board)=='x'){
                 System.out.println("X won!");
                 break;
             }
             else if(check(board)=='o'){
                 System.out.println("O won!");
+                break;
+            }
+            else if(check_draw(board)){
+                System.out.println("Its a draw!");
                 break;
             }
             else if(whoseTurn=='x'){
