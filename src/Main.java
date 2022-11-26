@@ -31,6 +31,9 @@ public class Main {
         if(board[x][y]=='x' && board[x+1][y]=='x' && board[x+2][y]=='x'){
             whoWon = 'x';
         }
+        else if(board[x+1][y]=='x' && board[x+1][y+1]=='x' && board[x+1][y+2]=='x'){
+            whoWon = 'x';
+        }
         else if(board[x][y]=='x' && board[x][y+1]=='x' && board[x][y+2]=='x'){
             whoWon = 'x';
         }
@@ -46,6 +49,10 @@ public class Main {
         else if(board[x][y+2]=='x' && board[x+1][y+2]=='x' && board[x+2][y+2]=='x'){
             whoWon = 'x';
         }
+        else if(board[x][y+1]=='x' && board[x+2][y+1]=='x' && board[x+2][y+1]=='x'){
+            whoWon = 'x';
+        }
+
 
         else if(board[x][y]=='o' && board[x+1][y]=='o' && board[x+2][y]=='o'){
             whoWon = 'o';
@@ -65,7 +72,13 @@ public class Main {
         else if(board[x+2][y]=='o' && board[x+1][y+1]=='o' && board[x][y+2]=='o'){
             whoWon = 'o';
         }
-      return whoWon;
+        else if(board[x+1][y]=='o' && board[x+1][y+1]=='o' && board[x+1][y+2]=='o') {
+            whoWon = 'o';
+        }
+        else if(board[x][y+1]=='o' && board[x+2][y+1]=='o' && board[x+2][y+1]=='o'){
+            whoWon = 'o';
+        }
+        return whoWon;
     }
     public static void main(String[] args) {
         System.out.println("Hello world!");
