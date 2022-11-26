@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void print(char board[][]){
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < board.length; i++)
         {
-            for (int j = 0; j < 3; j++)
+            for (int j = 0; j < board.length; j++)
             {
                 System.out.print(" " + board[i][j] + " ");
             }
@@ -13,9 +13,9 @@ public class Main {
     }
     public static boolean check_draw(char board[][]){
         int XorOamount = 0;
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < board.length; i++)
         {
-            for (int j = 0; j < 3; j++)
+            for (int j = 0; j < board.length; j++)
             {
                 if(board[i][j]!='n'){
                     XorOamount++;
@@ -40,11 +40,23 @@ public class Main {
         else if(board[x+2][y]=='x' && board[x+1][y+1]=='x' && board[x][y+2]=='x'){
             whoWon = 'x';
         }
+        else if(board[x+2][y]=='x' && board[x+2][y+1]=='x' && board[x+2][y+2]=='x'){
+            whoWon = 'x';
+        }
+        else if(board[x][y+2]=='x' && board[x+1][y+2]=='x' && board[x+2][y+2]=='x'){
+            whoWon = 'x';
+        }
 
         else if(board[x][y]=='o' && board[x+1][y]=='o' && board[x+2][y]=='o'){
             whoWon = 'o';
         }
+        else if(board[x][y+2]=='o' && board[x+1][y+2]=='o' && board[x+2][y+2]=='o'){
+            whoWon = 'o';
+        }
         else if(board[x][y]=='o' && board[x][y+1]=='o' && board[x][y+2]=='o'){
+            whoWon = 'o';
+        }
+        else if(board[x+2][y]=='o' && board[x+2][y+1]=='o' && board[x+2][y+2]=='o'){
             whoWon = 'o';
         }
         else if(board[x][y]=='o' && board[x+1][y+1]=='o' && board[x+2][y+2]=='o'){
