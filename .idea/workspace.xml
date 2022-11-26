@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66a9f2ff-01b2-4399-9fe0-efed2c4cf382" name="Changes" comment="poprawione jeszcze raz" />
+    <list default="true" id="66a9f2ff-01b2-4399-9fe0-efed2c4cf382" name="Changes" comment="poprawione ostatni raz">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669390442592</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="poprawione ostatni raz">
+      <created>1669469444880</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669469444880</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,6 +98,7 @@
     <MESSAGE value="ładniejsze jest teraz" />
     <MESSAGE value="dziala remis jeszcze" />
     <MESSAGE value="poprawione jeszcze raz" />
-    <option name="LAST_COMMIT_MESSAGE" value="poprawione jeszcze raz" />
+    <MESSAGE value="poprawione ostatni raz" />
+    <option name="LAST_COMMIT_MESSAGE" value="poprawione ostatni raz" />
   </component>
 </project>

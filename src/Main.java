@@ -85,9 +85,11 @@ public class Main {
                 System.out.println("Choose the X coordinates of your move");
                 Scanner input = new Scanner(System.in);
                 int coordsX = input.nextInt();
+                coordsX--;
                 System.out.println("Choose the Y coordinates of your move");
                 input = new Scanner(System.in);
                 int coordsY = input.nextInt();
+                coordsY--;
                 if(board[coordsY][coordsX]!='x' && board[coordsY][coordsX]!='o') {
                     board[coordsY][coordsX] = 'x';
                     whoseTurn ='o';
@@ -101,9 +103,11 @@ public class Main {
                 System.out.println("Choose the X coordinates of your move");
                 Scanner input = new Scanner(System.in);
                 int coordsX = input.nextInt();
+                coordsX--;
                 System.out.println("Choose the Y coordinates of your move");
                 input = new Scanner(System.in);
                 int coordsY = input.nextInt();
+                coordsY--;
                 if(board[coordsY][coordsX]!='x' && board[coordsY][coordsX]!='o') {
                     board[coordsY][coordsX] = 'o';
                     whoseTurn ='x';
